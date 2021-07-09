@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="css\owl.carousel.min.css">
 		<link rel="stylesheet" href="css\owl.theme.min.css">
 		<link rel="stylesheet" href="css\style.css">
+		<link rel="stylesheet" href="css\news.css">
 		<style>
 			body{background-color: lightcyan;font-family: Arial, Helvetica, sans-serif;list-style: none;}
 			.d-block{width:1140px;height:700px;}
@@ -12,231 +13,102 @@
 			ul li:hover> ul{display: block;position: absolute;margin-top: -15px;margin-left: 100px;}
 		</style>
 	</head>
-	<body>
-	  <div class="container" style="padding:10px;">
+	<body onload="load()">
+	<div class="container" style="padding:10px;">
 		<!-- Navbar Start -->
-			<nav class="navbar navbar-expand" style="margin-top:-10px;background-color: lightcyan;">
-			  <div class="navbar-collapse">
+		<nav class="navbar navbar-expand" style="margin-top:-10px;background: linear-gradient(135deg,#6394ff 0%,#0a193b 100%);">
+			<div class="navbar-collapse">
 				<ul class="navbar-nav mr-auto">
-					<a class="navbar-brand" href="index.html"><img src="img\logo.png" alt="logo" style="height:50px;width:65px;"></a>
+					<li><a class="navbar" href="index.html"><img src="img\logo.png" alt="logo" style="height:50px;width:65px;background-color: red;"></a></li>
 				</ul>
 				<ul style="display:contents;list-style:none;">
-				  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-				  <li class="nav-item dropdown">
-			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			          	<li class="nav-item dropdown">
-          	                <a class="nav-link">Disaster Information</a>
-          	                <ul class="dropdown-menu dropdown2" aria-labelledby="dropdown2">
-          	                    <li class="dropdown-item dropdown">
-          	                        <a>Natural Disaster</a>
-          	                        <ul class="dropdown-sub-menu">
-							  			<li>Earthquake</li>
-							  			<li>Cyclone</li>
-							  			<li>Tsunami</li>
-							  			<li>Landslide</li>
-          	                        </ul>
-          	                    </li>
-          	                    <li class="dropdown-item dropdown">
-          	                        <a>Man Made Disaster</a>
-          	                        <ul class="dropdown-sub-menu1">
-							  			<li>Nuclear</li>
-							  			<li>Biological</li>
-							  			<li>Chemical</li>
-          	                        </ul>
-          	                    </li>
-          	                </ul>
-          	            </li>
-			          </div>
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item dropdown">
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				          	<li class="nav-item dropdown sub">
+	          	                <a class="nav-link" style="color:#fff">Disaster Information</a>
+	          	                <ul class="dropdown-menu dropdown2">
+	          	                    <li class="dropdown-item dropdown">
+	          	                        <a>Natural Disaster</a>
+	          	                        <ul class="dropdown-sub-menu">
+								  			<li class="dItem"><a href="earthquake.html"><button class="button1">Earthquake</button></a></li>
+								  			<li class="dItem"><a href="cyclone.html"><button class="button1">Cyclone</button></a></li>
+								  			<li class="dItem"><a href="tsunami.html"><button class="button1">Tsunami</button></a></li>
+								  			<li class="dItem"><a href="landslide.html"><button class="button1">Landslide</button></a></li>
+	          	                        </ul>
+	          	                    </li>
+	          	                    <li class="dropdown-item dropdown">
+	          	                        <a>Man Made Disaster</a>
+	          	                        <ul class="dropdown-sub-menu1">
+								  			<li class="dItem"><a href="nuclear.html"><button class="button1">Nuclear</button></a></li>
+								  			<li class="dItem"><a href="biological.html"><button class="button1">Biological</button></a></li>
+								  			<li class="dItem"><a href="chemical.html"><button class="button1">Chemical</button></a></li>
+	          	                        </ul>
+	          	                    </li>
+	          	                </ul>
+	          	            </li>
+				        </div>
 			        </li>
 				    <li class="nav-item"><a class="nav-link" href="gallary.html">Gallary</a></li>
-				    <li class="nav-item"><a class="nav-link" href="gallary.html">Gallary</a></li>
-				    <li class="nav-item"><a class="nav-link" href="gallary.html">Gallary</a></li>
+				    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
 				</ul>
-			  </div>
-			</nav>
+			</div>
+		</nav>
 		<!-- Navbar end -->
-	<div class="container">
-		<div class="container"><br>
-			<p>Disaster Management can be defined as the organization and management of resources and responsibilities for dealing with all humanitarian aspects of emergencies, in particular preparedness, response and recovery in order to lessen the impact of disasters.</p>
-		</div>
-		<div class="container" style="padding:10px;margin-bottom: -20px;">
-			<div class="row">
-				<h3 style="text-align:left;width: 250px;"><p style="background-color: red;padding:8px;padding-left: 20px;">Natural Disaster</p></h3>
-			</div>
-		</div>
-		<div class="container">
-			<div class="cards" style="max-width: 1200px;">
-			  <div class="row">
-				<div class="col-md-9">
-				  <div class="card-body">
-					<h5 class="card-title" style="font-family: Raleway;">Earthquakes</h5>
-					<p class="card-text"style="padding-left: 20px;font-family: 'Open Sans', sans-serif;">An earthquake is a phenomenon that occurs without warning and involves violent shaking of the ground and everything over it. It results from the release of accumulated stress of the moving lithospheric or crustal plates. The earth's crust is divided into seven major plates, that are about 50 miles thick, which move slowly and continuously over the earth's interior and several minor plates. Earthquakes are tectonic in origin; that is the moving plates are responsible for the occurrence of violent shakes. The occurrence of an earthquake in a populated area may cause numerous casualties and injuries as well as extensive damage to property.</p>
-				  </div>
-				</div>
-				<div class="col-md-3">
-				  <img class="card-img-top" src="img\earthquake.jpg" alt="Card image" style="width:100%;height:220px; padding-top: 50px;">
-				</div>
-			  </div>
-			</div>
-			<div class="cards" style="max-width: 1200px;">
-			  <div class="row">
-				<div class="col-md-9">
-				  <div class="card-body">
-					<h5 class="card-title" style="font-family: Raleway;">Tsunami</h5>
-					<p class="card-text"style="padding-left: 20px;font-family: 'Open Sans', sans-serif;">The Earth's lithosphere is broken up into a bunch of discrete pieces, called plates that move around the surface of the planet. There are seven or eight major plates (depending on how they are defined) and many minor plates.  This motion is driven by the flow of the mantle rock beneath the plates and by the forces plates exert at their boundaries where they touch each other.  Earthquakes happen when plates move with respect to each other because of the friction and stress at the edges of plates prevents them from slipping smoothly at their boundaries. When one plate is forced to dive beneath another plate, there is no way to do it except with some component of vertical motion creating tsunami.</p>
-				  </div>
-				</div>
-				<div class="col-md-3">
-				  <img class="card-img-top" src="img\tsunami.jpg" alt="Card image" style="width:100%;height:220px; padding-top: 50px;">
-				</div>
-			  </div>
-			</div>
-			<div class="cards" style="max-width: 1200px;">
-			  <div class="row">
-				<div class="col-md-9">
-				  <div class="card-body">
-					<h5 class="card-title" style="font-family: Raleway;">Landslides</h5>
-					<p class="card-text"style="padding-left: 20px;font-family: 'Open Sans', sans-serif;">India has the highest mountain chain on earth, the Himalayas, which are formed due to collision of Indian and Eurasian plate, the northward movement of the Indian plate towards China causes continuous stress on the rocks rendering them friable, weak and prone to landslides and earthquakes. The slow motion of the Indian crust, about 5 cm/year accumulates stress to which natural disasters are attributed. Some landslides make unique, and unparalleled catastrophes. Landslides and avalanches are among the major hydro-geological hazards that affect large parts of India besides the Himalayas, the Northeastern hill ranges, the Western Ghats, the Nilgiris, the Eastern Ghats and the Vindhyans, in that order, covering about 15 % of the landmass.</p>
-				  </div>
-				</div>
-				<div class="col-md-3">
-				  <img class="card-img-top" src="img\landslide.jpg" alt="Card image" style="width:100%;height:220px; padding-top: 50px;">
-				</div>
-			  </div>
-			</div>
-			<div class="cards" style="max-width: 1200px;">
-			  <div class="row">
-				<div class="col-md-9">
-				  <div class="card-body">
-					<h5 class="card-title" style="font-family: Raleway;">Cyclone</h5>
-					<p class="card-text"style="padding-left: 20px;font-family: 'Open Sans', sans-serif;">Cyclones are caused by atmospheric disturbances around a low-pressure area distinguished by swift and often destructive air circulation. Cyclones are usually accompanied by violent storms and bad weather. The air circulates inward in an anticlockwise direction in the Northern hemisphere and clockwise in the Southern hemisphere. Cyclones are classified as: (i) extra tropical cyclones (also called temperate cyclones); and (ii) tropical cyclones. The word Cyclone is derived from the Greek word Cyclos meaning the coils of a snake. It was coined by Henry Peddington because the tropical storms in the Bay of Bengal and the Arabian Sea appear like coiled serpents of the sea.</p>
-				  </div>
-				</div>
-				<div class="col-md-3">
-				  <img class="card-img-top" src="img\cyclone.jpg" alt="Card image" style="width:100%;height:220px; padding-top: 50px;">
-				</div>
-			  </div>
-			</div>
-			<div class="cards" style="max-width: 1200px;">
-			  <div class="row">
-				<div class="col-md-9">
-				  <div class="card-body">
-					<h5 class="card-title" style="font-family: Raleway;">Floods</h5>
-					<p class="card-text"style="padding-left: 20px;font-family: 'Open Sans', sans-serif;">India is highly vulnerable to floods. Out of the total geographical area of 329 million hectares (mha), more than 40 mha is flood prone. Floods are a recurrent phenomenon, which cause huge loss of lives and damage to livelihood systems, property, infrastructure and public utilities. It is a cause for concern that flood related damages show an increasing trend. The average annual flood damage in the last 10 years period from 1996 to 2005 was Rs. 4745 crore as compared to Rs. 1805 crore, the corresponding average for the previous 53 years. This can be attributed to many reasons including a steep increase in population, rapid urbanization growing developmental and economic activities in flood plains coupled with global warming.</p>
-				  </div>
-				</div>
-				<div class="col-md-3">
-				  <img class="card-img-top" src="img\flood.jpg" alt="Card image" style="width:100%;height:220px; padding-top: 50px;">
-				</div>
-			  </div>
-			</div>
-		</div>
 
-		<div class="container">
+		<div class="container layout-content" style="width: 82%;margin-top:15px;display: flex;padding-left:20px;"> 
+  			<section class="region region-content"> 
+                <h1 class="heading1">Earthquakes</h1>
+                <div class="field-content">
+                  <p>An earthquake is a phenomenon that occurs without warning and involves violent shaking of the ground and everything over it. It results from the release of accumulated stress of the moving lithospheric or crustal plates. The earth's crust is divided into seven major plates, that are about 50 miles thick, which move slowly and continuously over the earth's interior and several minor plates. Earthquakes are tectonic in origin; that is the moving plates are responsible for the occurrence of violent shakes. The occurrence of an earthquake in a populated area may cause numerous casualties and injuries as well as extensive damage to property.</p> 
+                  <p>At one time regions of the country away from the Himalayas and other inter-plate boundaries were considered to be relatively safe from damaging earthquakes. However, in the recent past, even these areas have experienced devastating earthquakes, albeit of lower magnitude than the Himalayan earthquakes. The Koyna earthquake in 1967 led to revision of the seismic zoning map, resulting in deletion of the non-seismic zone from the map. The areas surrounding Koyna were also re-designated to Seismic Zone IV, indicating high hazard. The occurrence of the Killari earthquake in 1993 resulted in further revision of the seismic zoning map in which the low hazard zone or Seismic Zone I was merged with Seismic Zone II, and some parts of Deccan and Peninsular India were brought under Seismic Zone III consisting of areas designated as moderate hazard zone areas. Recent research suggests that as understanding of the seismic hazard of these regions increases, more areas assigned as low hazard may be re-designated to higher level of seismic hazard, or vice-versa.</p> 
+                  <p>The North-Eastern part of the country continues to experience moderate to large earthquakes at frequent intervals including the two great earthquakes mentioned above. Since 1950, the region has experienced several moderate earthquakes. On an average, the region experiences an earthquake with a magnitude greater than 6.0 every year. The Andaman and Nicobar Islands are also situated on an inter-plate boundary and frequently experience damaging earthquakes.</p> 
+                   <img src="img\earthquake1.jpg">
+                   <br><br><br><br>
+                  <h2 class="heading2">What to Do</h2> 
+                  <ul>
+                   <li>Keep calm, switch on the radio/TV and obey any instructions you hear on it.</li> 
+                   <li>Keep away from beaches and low banks of rivers. Huge waves may sweep in.</li> 
+                   <li>Be prepared to expect aftershocks.</li> 
+                   <li>Turn off the water, gas and electricity.</li> 
+                   <li>Do not smoke and do not light matches or use a cigarette lighter. Do not turn on switches. There may be gas leaks or short-circuits. Use a torch.</li> 
+                   <li>Immediately clean up any inflammable products that may have spilled (alcohol, paint, etc).</li> 
+                   <li>If you know that people have been buried, tell the rescue teams. Do not rush and do not worsen the situation of injured persons or your own situation.</li> 
+                   <li>Avoid places where there are loose electric wires and do not touch any metal object in contact with them.</li> 
+                   <li>Do not re-enter badly damaged buildings and do not go near damaged structures.</li> 
+                  </ul>
+                  <h2 class="heading2">Emergency Kit</h2> 
+                  <ul>
+                   <li>Battery operated torch</li> 
+                   <li>Battery operated radio</li> 
+                   <li>First aid kit and manual</li> 
+                   <li>Emergency food (dry items) and water (packed and sealed)</li>  
+                   <li>Chlorine tablets or powdered water purifiers</li> 
+                   <li>Can opener.</li> 
+                   <li>Essential medicines</li> 
+                   <li>Cash, Aadhar Card and Ration Card</li> 
+                   <li>Thick ropes and cords</li> 
+                  </ul>
+                </div> 
+    		</section>  
+		</div> 
 
-		<div class="container" style="padding:10px;margin-bottom: -20px;">
-			<div class="row">
-				<h3 style="text-align:left;width: 280px;"><p style="background-color: red;padding:8px;padding-left: 20px;">Man Made Disaster</p></h3>
-			</div>
-		</div>
-		<div class="container">
-			<div class="cards" style="max-width: 1200px;">
-			  <div class="row">
-				<div class="col-md-9">
-				  <div class="card-body">
-					<h5 class="card-title" style="font-family: Raleway;">Chemical</h5>
-					<p class="card-text"style="padding-left: 20px;font-family: 'Open Sans', sans-serif;">Chemical, being at the core of modern industrial systems, has attained a very serious concern for disaster management within government, private sector and community at large. Chemical disasters may be traumatic in their impacts on human beings and have resulted in the casualties and also damages nature and property. The elements which are at highest risks due to chemical disaster primarily include the industrial plant, its employees & workers, hazardous chemicals vehicles, the residents of nearby settlements, adjacent buildings, occupants and surrounding community.</p>
-				  </div>
-				</div>
-				<div class="col-md-3">
-				  <img class="card-img-top" src="img\chemical.jpg" alt="Card image" style="width:100%;height:220px; padding-top: 50px;">
-				</div>
-			  </div>
-			</div>
-
-			<div class="cards" style="max-width: 1200px;">
-			  <div class="row">
-				<div class="col-md-9">
-				  <div class="card-body">
-					<h5 class="card-title" style="font-family: Raleway;">Nuclear</h5>
-					<p class="card-text"style="padding-left: 20px;font-family: 'Open Sans', sans-serif;">Nuclear and Radiological Emergency can arise in a nuclear facility at plant level leading to plant/ site or offsite emergency depending upon the extent of its impact on the surroundings. It can also take place while using radiation sources, either at Hospitals, Industries, Agriculture or Research Institutions due to loss or misplacement or due to faulty handling. The other events that can lead to Nuclear or Radiological Emergency in the public domain, include, accident of a vehicle carrying radioactive/nuclear material, due of an orphan source i.e. the source which is not under regulatory control or due to usage of radiation source/radioactive material in Malevolant activities.</p>
-				  </div>
-				</div>
-				<div class="col-md-3">
-				  <img class="card-img-top" src="img\nuclear.jpg" alt="Card image" style="width:100%;height:220px; padding-top: 50px;">
-				</div>
-			  </div>
-			</div>
-			<div class="cards" style="max-width: 1200px;">
-			  <div class="row">
-				<div class="col-md-9">
-				  <div class="card-body">
-					<h5 class="card-title" style="font-family: Raleway;">Biological</h5>
-					<p class="card-text"style="padding-left: 20px;font-family: 'Open Sans', sans-serif;">Biological disasters are causative of process or phenomenon of organic origin or conveyed by biological vectors, including exposure to pathogenic micro-organisms, toxins and bioactive substances that may cause loss of life, injury, illness or other health impacts, property damage, loss of livelihoods and services. Examples of biological disasters include outbreaks of epidemic diseases, plant or animal contagion, insect or other animal plagues and infestation. Biological disasters may be in the form of:-<br>
-
-          			<b>Epidemic</b> affecting a disproportionately large number of individuals within a population, community, or region at the same time, examples being Cholera, Plague, Japanese Encephalitis (JE)/Acute Encephalitis  Syndrome (AES); or,<br>
-
-          			<b>Pandemic</b> is an epidemic that spreads across a large region, that is, a continent, or even worldwide of existing, emerging or reemerging diseases and pestilences, example being Influenza H1N1 (Swine Flu).</p>
-				  </div>
-				</div>
-				<div class="col-md-3">
-				  <img class="card-img-top" src="img\bio.jpg" alt="Card image" style="width:100%;height:220px; padding-top: 50px;">
-				</div>
-			  </div>
-			</div>
-			</div>
-		</div>
-		</div>
 		<!-- Footer -->
-		<footer class="page-footer font-small mt-2" style="background-color:#222222;color:#fff;padding-top:1px;padding-bottom:5px;font-family: sans-serif;margin-bottom:-9.6px;">
-		  <!-- Footer Links -->
-		  <div class="container mt-4">
-			<div class="row">
-				<div class="col-md-4 max-auto mb-4">
-					<h4>Disaster Management</h4>
-					<hr class="mb-2" style="width:350px;background-color:#fff;border-radius:10%;">
-					<p>Disaster management refers to the conservation of lives and property during natural or man-made disasters. Disaster management plans are multi-layered and are planned to address issues such as floods, hurricanes, fires, mass failure of utilities, rapid spread of disease and droughts.</p>
+		<div class="container">
+			<footer class="page-footer font-small mt-2" style="background: linear-gradient(135deg,#6394ff 0%,#0a193b 100%);padding:9px;font-family: sans-serif;margin-bottom:-9.6px;">
+				<div class="container footer-copyright" style="display:flex;">
+				  	<ul class="navbar-nav mr-auto">
+				  		<li>© 2020 &nbsp;<a href="#">nielit student project</a></li>
+					</ul>
+				  	<ul class="navbar-nav mr-auto" style="display:contents;">
+				  		<li><a href="index.html">Home</a></li> &nbsp;&nbsp; | &nbsp;&nbsp;
+				  		<li><a href="contact.html">Contact Us</a></li> &nbsp;&nbsp; | &nbsp;&nbsp;
+				  		<li><a href="privacy policy.html">Privacy Policy</a></li> &nbsp;&nbsp;&nbsp;&nbsp;
+				  	</ul>
 				</div>
-				<div class="col-md-3 max-auto mb-4">
-					<h4>Useful links</h4>
-					<hr class="mb-2" style="width:260px;background-color:#fff;border-radius:10%;">
-					<p>
-					  <a href="index.html">Home</a>
-					</p>
-					<p>
-					  <a href="privacy policy.html">Privacy Policy</a>
-					</p>
-					<p>
-					  <a href="about.html">About Us</a>
-					</p>
-					<p>
-					  <a href="contact.html">Contact Us</a>
-					</p>
-				</div>
-				<div class="col-md-4 max-auto mb-4"><h4>Contact Us</h4>
-					<hr class="mb-2" style="width:350px;background-color:#fff;border-radius:10%;">
-					<p>
-					  <i class="fas fa-home mr-3"></i>Surya Niwas, Inder Nagar, Dhalli,&nbsp;Shimla-171012</p>
-					<p>
-					  <i class="fas fa-envelope mr-3"></i> yashpal00004@gmail.com</p>
-					<p>
-					  <i class="fas fa-phone mr-3"></i> + 91 98168 52943</p>
-					<p>
-					  <i class="fas fa-print mr-3"></i> + 91 70183 01290</p>
-				</div>
-			</div>
-		  </div><hr class="mb-2" style="width:1110px;background-color:#fff;margin-top:-20px;">
-		  <div class="container footer-copyright" style="display:flex;">
-		  	<ul class="navbar-nav mr-auto">
-		  		<li>© 2020 &nbsp;<a href="#">nielit student project</a></li>
-			</ul>
-		  	<ul class="navbar-nav mr-auto" style="display:contents;">
-		  		<li><a href="index.html">Home</a></li> &nbsp;&nbsp; | &nbsp;&nbsp;
-		  		<li><a href="contact.html">Contact Us</a></li> &nbsp;&nbsp; | &nbsp;&nbsp;
-		  		<li><a href="privacy policy.html">Privacy Policy</a></li> &nbsp;&nbsp;&nbsp;&nbsp;
-		  	</ul>
-		  </div>
-		</footer>
+			</footer>
+		</div>
+	</div>
 
 	  			<!--- Scripts  --->
 
@@ -246,6 +118,8 @@
 		<script src="js\jquery.min.js"></script>
 		<script src="js\owl.carousel.js"></script>
 		<script src="js\owl.carousel.min.js"></script>
-		</div>
+
+	  <script type="text/javascript" src="js\main.js"></script>
+	  <!-- <script type="text/javascript" src="js\news.js"></script> -->
 	</body>
 </html>

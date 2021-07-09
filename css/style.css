@@ -1,14 +1,18 @@
 .dropdown-item:hover{
-	background-color: cyan;
+	background-color: #E2FDFF;
+}
+
+.dropdown-item{
+    color: #fff;
 }
 
 .dropdown-menu {
     position: absolute;
     top: 135%;
-    left: -84px;
+    left: -88px;
     display: none;
-    border-color: lightcyan;
-    background-color: lightcyan;
+    border: none;
+    background: linear-gradient(135deg,#6394ff 0%,#0a193b 100%);
     padding-bottom: 0%;
     }
 
@@ -22,11 +26,11 @@
     padding: 10px;
     margin: .125rem 0 0;
     list-style: none;
-    background-color: lightcyan;
+    background: linear-gradient(135deg,#6394ff 0%,#0a193b 100%);
     }
 
  .dItem:hover{
-	background-color: cyan;
+	background-color:  #E2FDFF;
 }
 
 .dropdown-sub-menu1 {
@@ -39,17 +43,92 @@
     padding: 10px;
     margin: .125rem 0 0;
     list-style: none;
-    background-color: lightcyan;
+    background: linear-gradient(135deg,#6394ff 0%,#0a193b 100%);
     }
 
 .dropdown-item:hover{
-	background-color: cyan;
+	background-color:  #E2FDFF;
 }
 
 .button1 {
 	border: none;
 	background-color: rgba(0, 0, 0, 0);
 }
+.button1:hover{
+    color: black;
+}
+a {color: #fff;}
+a:hover{Color: #fff}
+section {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    background-color: lightcyan;
+}
+.wrap {
+    display: flex;
+    background: white;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
 
-a {color: black;}
+.wrap:hover {
+    background: linear-gradient(135deg,#6394ff 0%,#0a193b 100%);
+    color: white;
+}
+
+.mbr-iconfont {
+    font-size: 4.5rem !important;
+    color: #313131;
+    margin: 1rem;
+    padding-right: 1rem;
+}
+.vcenter {
+    margin: auto;
+}
+
+.mbr-section-title3 {
+    text-align: left;
+}
+h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.display-5 {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 1.4rem;
+}
+.mbr-bold {
+    font-weight: 700;
+}
+
+ p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 25px;
+}
+.display-6 {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 1rem}
+
+.heading1{
+    background: linear-gradient(-135deg,#6394ff 0%,#0a193b 100%);
+    padding:5px;
+    padding-left: 10px;
+    color:#fff;
+    max-width: 270px;
+}
+
+.heading2{
+    background: linear-gradient(360deg,#6394ff 0%,#0a193b 100%);
+    padding:5px;
+    padding-left: 10px;
+    color:#fff;
+    max-width: 340px;
+}
+
+.contact{
+   padding-top: 20px;
+}
 
