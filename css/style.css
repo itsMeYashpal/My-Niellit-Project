@@ -117,7 +117,7 @@ h2 {
     padding:5px;
     padding-left: 10px;
     color:#fff;
-    max-width: 270px;
+    max-width: 300px;
 }
 
 .heading2{
@@ -125,10 +125,48 @@ h2 {
     padding:5px;
     padding-left: 10px;
     color:#fff;
-    max-width: 340px;
+    max-width: 450px;
 }
 
 .contact{
    padding-top: 20px;
 }
 
+#more, #more1{
+    display: none;
+}
+
+#mybtn, #mybtn1{
+    border-style: none;
+    background-color: lightcyan;
+}
+
+.marquee-wrapper {
+    margin-top: 5px;
+    border-width: medium;
+    color: red;
+    height: 50px;
+    width: 93%;
+    padding: 15px 19px;
+    background-color: cyan;
+    font-weight: bold;
+    font-size: 1em;
+    border-color: #6394ff;
+    border-style: solid;
+    text-align: bottom;
+}
+
+.alert-box {
+    margin-top: 5px;
+    color: red;
+    height: 50px;
+    width: 7%;
+    font-weight: bold;
+    font-size: 1em;
+    background: linear-gradient(#6394ff 20%,#0a193b 110%);
+    position: relative;
+    padding-top: 10px;
+    padding-right: 4px;
+    color: red;
+    text-align: center;
+}
